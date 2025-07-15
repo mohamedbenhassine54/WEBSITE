@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Family Tree - 3aylet el Bouchon</title>
+  <link rel="stylesheet" href="members.css" />
+  <link rel="stylesheet" href="family-tree.css" />
+</head>
+<body>
+  <header>
+    <h1>Family Tree</h1>
+    <p>Explore the 3aylet el Bouchon family structure</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="members.html">Members</a></li>
+    </ul>
+  </nav>
+
+  <div class="tree">
+    <ul>
+      <li>
+        <a href="#" onclick="showDetails('fatma')">
+          Fatma Charni
+          <img src="images/mima.jpeg" alt="Fatma Charni" onerror="this.src='images/placeholder.jpg'">
+        </a>
+        <ul>
+          <li>
+            <div class="couple">
+              <a href="#" onclick="showDetails('mehrzia')">
+                Mehrzia Charni
+                <img src="images/omi.jpeg" alt="Mehrzia Charni" onerror="this.src='images/placeholder.jpg'">
+              </a>
+              <span>&</span>
+              <a href="#" onclick="showDetails('mohamed')">
+                Mohamed Ben Hassine
+                <img src="images/baba.jpg" alt="Mohamed Ben Hassine" onerror="this.src='images/placeholder.jpg'">
+              </a>
+            </div>
+            <ul>
+              <li>
+                <a href="#" onclick="showDetails('junior')">
+                  Mohamed Junior Ben Hassine
+                  <img src="images/mohamed.jpg" alt="Mohamed Junior Ben Hassine" onerror="this.src='images/placeholder.jpg'">
+                </a>
+              </li>
+              <li>
+                <a href="#" onclick="showDetails('adem')">
+                  Adem Ben Hassine
+                  <img src="images/edem.jpeg" alt="Adem Ben Hassine" onerror="this.src='images/placeholder.jpg'">
+                </a>
+              </li>
+              <li>
+                <a href="#" onclick="showDetails('rayen')">
+                  Rayen Ben Hassine
+                  <img src="images/rayen.jpeg" alt="Rayen Ben Hassine" onerror="this.src='images/placeholder.jpg'">
+                </a>
+              </li>
+              <li>
+                <a href="#" onclick="showDetails('sarra')">
+                  Sarra Ben Hassine
+                  <img src="images/sara.jpg" alt="Sarra Ben Hassine" onerror="this.src='images/placeholder.jpg'">
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div id="member-details" class="hidden">
+    <h2 id="member-name"></h2>
+    <div class="buttons">
+      <button onclick="showInfo('photo')">Photo</button>
+      <button onclick="showInfo('birth')">Birth</button>
+      <button onclick="showInfo('phone')">Phone Number</button>
+    </div>
+    <div id="member-info"></div>
+  </div>
+
+  <footer>
+    <p>© 2025 3aylet el Bouchon. All rights reserved.</p>
+  </footer>
+
+  <script src="members.js"></script>
+  <script src="family-tree.js"></script>
+</body>
+</html>

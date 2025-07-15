@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffaf0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #c8ad7f;
+  color: white;
+  padding: 30px;
+  border-bottom: 4px solid #c8ad7f;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  background-color: #7c6031;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  background-color: #7c6031;
+}
+
+.members-list {
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.members-list button {
+  padding: 12px 20px;
+  background-color: #7c6031;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.members-list button:hover {
+  background-color: #e69e22;
+}
+
+#member-details {
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #7c6031;
+}
+
+#member-info {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#member-info img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}

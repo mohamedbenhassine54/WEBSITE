@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Family Members</title>
+  <link rel="stylesheet" href="members.css" />
+</head>
+<body>
+  <header>
+    <h1>Our Family Members</h1>
+    <p>Select a member to see details</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <div class="members-list">
+    <button onclick="showDetails('mohamed')">Mohamed Ben Hassine</button>
+    <button onclick="showDetails('junior')">Mohamed Junior Ben Hassine</button>
+    <button onclick="showDetails('adem')">Adem Ben Hassine</button>
+    <button onclick="showDetails('rayen')">Rayen Ben Hassine</button>
+    <button onclick="showDetails('sarra')">Sarra Ben Hassine</button>
+    <button onclick="showDetails('fatma')">Fatma Charni</button>
+    <button onclick="showDetails('mehrzia')">Mehrzia Charni</button>
+  </div>
+
+  <div id="member-details" class="hidden">
+    <h2 id="member-name"></h2>
+    <div class="buttons">
+      <button onclick="showInfo('photo')">Photo</button>
+      <button onclick="showInfo('birth')">Birth</button>
+      <button onclick="showInfo('phone')">Phone Number</button>
+    </div>
+    <div id="member-info"></div>
+  </div>
+
+  <footer>
+    <p>© 2025 3aylet el Bouchon. All rights reserved.</p>
+  </footer>
+
+  <script src="members.js"></script>
+</body>
+</html>
